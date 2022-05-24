@@ -1,0 +1,385 @@
+.home {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.hero {
+  background-color: thistle;
+  background-image: linear-gradient(rgba(3, 68, 115, 0), rgba(5, 36, 108, 0)),
+    linear-gradient(rgba(3, 68, 115, 0.8), rgba(5, 36, 108, 0.85)),
+    url("https://fiberseal.com/assets/Uploads/_resampled/ScaleWidthWzEyMDBd/shutterstock-309672413-dry-clean-shirts.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0;
+  animation: welcome__animation 45s linear infinite;
+}
+
+@keyframes welcome__animation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.hero__box {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 25px auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+  padding: 25px 5px 5px 5px;
+  font-family: "Grandstander";
+  color: white;
+}
+
+.hero p {
+  margin-left: 15px;
+  font-size: 1.4rem;
+  max-width: 420px;
+  margin-bottom: 15px;
+  font-family: "Indie Flower";
+  color: white;
+}
+
+.clean__button {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 5px !important;
+  border: 2px solid var(--brighterwash-color-g) !important;
+  color: var(--brighterwash-color-g) !important;
+  transition: 0.5s ease !important;
+  margin: 0 20px !important;
+}
+
+.clean__button:hover {
+  background-color: var(--brighterwash-color-deeper-g) !important;
+  color: white !important;
+  border-color: var(--brighterwash-color-g) !important;
+}
+
+.block__2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  flex-flow: wrap;
+  padding: 105px 0 60px 0;
+}
+
+.b2__box {
+  background-color: var(--brighterwash-background);
+  width: 300px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  margin-top: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.b2__box:hover {
+  box-shadow: 2px 2px 5px 1px gray;
+  transform: scale(1.04);
+  transition: 0.5s ease;
+}
+
+.b2__box h1 {
+  font-family: "Grandstander";
+  font-size: 3rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: var(--brighterwash-color-deepest);
+}
+
+.b2__Icons {
+  font-size: 100px !important;
+}
+
+.b2__box h2 {
+  color: var(--brighterwash-color-deepest);
+  font-family: "Oswald";
+  text-transform: capitalize;
+  margin: 15px auto;
+  font-weight: 500;
+}
+
+.b2__box h3 {
+  padding: 5px;
+  font-family: "Inconsolata";
+}
+
+.green {
+  color: rgb(69, 206, 108) !important;
+}
+
+.blue {
+  color: var(--brighterwash-color) !important;
+}
+
+.block__3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px;
+  flex-flow: column;
+}
+
+.block__header {
+  font-family: "Grandstander";
+  margin: 25px 2px;
+  font-size: 1.3rem;
+}
+
+.b3 {
+  color: var(--brighterwash-color);
+}
+
+.block__header h2 {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.block__header i {
+  display: block;
+  height: 6px;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: var(--brighterwash-color);
+}
+
+.b3 i {
+  background-color: var(--brighterwash-color-deeper);
+}
+
+.main__block {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.b3__box {
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  margin-top: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 5px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.b3__box h3 {
+  margin: 10px 0;
+  font-family: "Grandstander";
+}
+
+.b3__box p {
+  font-weight: 600;
+  color: var(--brighterwash-color-deepest);
+  max-width: 330px;
+}
+
+/* Services */
+.block__4 {
+  background-color: var(--brighterwash-color-deeper);
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  flex-flow: wrap;
+  padding: 35px 0 50px 0;
+}
+
+.b4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  /* min-width: 500px; */
+  margin: 25px 0;
+}
+
+.services ul {
+  margin: 0 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.services li {
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans";
+  white-space: normal;
+  font-size: 1.2rem;
+}
+
+.services li b {
+  font-family: "Indie Flower" !important;
+  font-size: 1.9rem !important;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.services .approved {
+  color: var(--brighterwash-color);
+  margin-right: 15px;
+}
+
+/* Reviews */
+
+.block__5 {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0px;
+  flex-flow: column;
+}
+
+.b5 h2 {
+  color: var(--brighterwash-color-deeper);
+}
+
+.reviews__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px 10px;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.reviews__box:hover {
+  transform: scale(1);
+  color: black;
+  box-shadow: none;
+  background-color: var(--brighterwash-background);
+}
+
+.reviews__box {
+  box-shadow: 10px 8px 12px 5px var(--brighterwash-background);
+  transition: 0.5s ease;
+  transform: scale(0.9);
+  color: gray;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 25px 0px;
+  border-radius: 8px;
+  max-width: 250px;
+  border: 0px solid var(--brighterwash-background);
+  margin: 15px;
+  overflow: hidden;
+}
+
+.box__header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--brighterwash-color-deepest);
+  opacity: 0% !important;
+  position: absolute;
+  z-index: 2;
+}
+
+.box__header h4 {
+  position: absolute;
+  color: white;
+  top: 0px;
+  font-size: 1.5rem;
+  font-family: "Indie Flower";
+  z-index: 3;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  background-color: rgba(43, 129, 204, 0.3);
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 8px;
+  height: 97%;
+  transition: 0.5s ease;
+}
+
+.box__header h5 {
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  z-index: 3;
+}
+
+.box__header img {
+  border-radius: 5px;
+  width: 100%;
+  height: 280px;
+  z-index: 1;
+}
+
+.box__body {
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 450px) {
+  .services ul {
+    min-width: 90%;
+    padding-left: 5%;
+  }
+}

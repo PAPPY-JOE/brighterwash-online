@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  --brighterwash-background: #e6ecf0;
+  --brighterwash-color: rgb(7, 176, 223);
+  --brighterwash-color-deep: rgb(17, 85, 152);
+  --brighterwash-color-deeper: rgb(13, 68, 123);
+  --brighterwash-color-deepest: rgb(7, 47, 88);
+
+  --brighterwash-color-r: red;
+  --brighterwash-color-deeper-r: rgb(179, 15, 15);
+  --brighterwash-color-deepest-r: rgb(117, 13, 13);
+
+  --brighterwash-color-g: greenyellow;
+  --brighterwash-color-deeper-g: yellowgreen;
+  --brighterwash-color-deepest-g: rgb(97, 137, 18);
+  background-color: var(--brighterwash-background);
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+button {
+  border-radius: 5px !important;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.flex-r {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-r-w {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.r {
+  color: var(--brighterwash-color-r);
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer !important;
+}

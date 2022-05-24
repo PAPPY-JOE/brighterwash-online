@@ -1,0 +1,141 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: auto;
+  background: var(--brighterwash-background);
+  display: flex;
+  padding: 15px;
+  z-index: 100000000000000000;
+  border-bottom: 2px solid var(--brighterwash-color-deeper);
+}
+
+.test {
+  left: -500px !important;
+  top: -48px;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.show {
+  left: 0px !important;
+  z-index: 1000000000000000;
+}
+
+.header__box {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h2 {
+  cursor: pointer;
+  font-family: "Permanent Marker";
+  letter-spacing: 1.5px;
+  color: var(--brighterwash-color-deepest);
+}
+
+.menuIcon {
+  display: none !important;
+}
+
+.box-1 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.box-2 {
+  display: flex;
+  margin-left: auto;
+  margin-right: 25px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.box-2 a {
+  color: var(--brighterwash-color);
+  margin: 0 15px;
+  font-weight: 600;
+  position: relative;
+  font-family: "Open Sans";
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.box-2 a:hover {
+  color: var(--brighterwash-color-deeper);
+  transition: 0.5s ease;
+}
+
+.box-2 a:hover i {
+  width: 80%;
+}
+
+.box-2 a i {
+  display: block;
+  background-color: var(--brighterwash-color-deeper);
+  height: 2px;
+  width: 0;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -2px;
+  transition: 0.3s ease;
+}
+
+.header__button {
+  border-radius: 5px !important;
+  border: 2px solid var(--brighterwash-color) !important;
+  color: var(--brighterwash-color) !important;
+  transition: 0.5s ease !important;
+  margin: 0 20px !important;
+}
+
+.header__button:hover {
+  background-color: var(--brighterwash-color) !important;
+  color: white !important;
+}
+
+#sidebar {
+  display: none;
+}
+
+.redd {
+  -webkit-text-stroke: 0.4px var(--brighterwash-color-deeper); /* width and color */
+  color: var(--brighterwash-color-r);
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.redd:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 808px) {
+  .header {
+    flex-flow: column;
+    overflow-x: visible;
+  }
+
+  .menuIcon {
+    display: block !important;
+    font-size: 40px !important;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 35px;
+  }
+
+  .box-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .box-2 {
+    display: none;
+  }
+
+  #sidebar {
+    display: flex;
+    z-index: 100000000000000;
+  }
+}

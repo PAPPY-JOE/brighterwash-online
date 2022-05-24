@@ -1,0 +1,176 @@
+.journal {
+  padding-bottom: 60px;
+}
+
+.log table {
+  width: 90%;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.log label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.log table tr {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-around;
+  justify-content: center;
+  padding-top: 9px;
+  width: 100%;
+}
+.log table td {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.log input {
+  border: 1px solid var(--brighterwash-background);
+  border-radius: 3px;
+  padding: 3px 5px;
+  color: var(--brighterwash-color-deep);
+  font-family: "Inconsolata", sans-serif;
+  text-align: center;
+  margin: 5px 2px 5px 10px;
+}
+
+.log input:hover {
+  background-color: var(--brighterwash-background);
+}
+
+.log button:hover {
+  background-color: var(--brighterwash-color-deeper-g);
+}
+
+.log button:active {
+  background-color: var(--brighterwash-background);
+  color: var(--brighterwash-color-deeper-g);
+}
+
+.log button {
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--brighterwash-color-g);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.book,
+.log {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 5px;
+}
+
+.log--active, .log--active .marL{
+  font-size: 2rem;
+  transition: 0.5s all ease;
+}
+
+.book,
+.searcher {
+  padding-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border-spacing: 0px;
+  padding-bottom: 20px;
+}
+.book th {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-left: 1px solid var(--brighterwash-background);
+  border-bottom: 1px solid var(--brighterwash-background);
+}
+
+.book td {
+  padding: 0.5rem 0.2rem;
+  /* word-wrap: break-word; */
+  margin-right: auto;
+  margin-left: auto;
+  border-left: 1px solid var(--brighterwash-background);
+}
+
+/* 
+.book tr colgroup {
+  background-color: aquamarine !important;
+} */
+
+.book tr {
+  text-align: center;
+  width: 100%;
+}
+
+h3 {
+  width: 95%;
+  margin: 15px 15px 30px 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.errorMessage {
+  font-family: "Inconsolata", sans-serif;
+  color: red;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.searchMenu {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  border-radius: 5px;
+  border-color: var(--brighterwash-background);
+  background-color: var(--brighterwash-background);
+}
+
+.searchMenu:focus {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.searchMenu option {
+  font-family: "Inconsolata", sans-serif;
+  padding: 50px 3px;
+  font-size: 1rem;
+  background-color: var(--brighterwash-background);
+}
+
+.searchIcon {
+  padding-left: 15px;
+  font-size: 2rem !important;
+}
+
+.marL {
+  margin-left: 20px !important;
+}
