@@ -12,11 +12,11 @@ import DoneOutlineRoundedIcon from "@material-ui/icons/DoneOutlineRounded";
 import BeenhereIcon from "@material-ui/icons/Beenhere";
 
 function Index() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const clean = (e) => {
     e.preventDefault();
-    history.push("/clean#");
+    navigate("/clean#");
   };
 
   return (

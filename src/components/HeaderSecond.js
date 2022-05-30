@@ -1,19 +1,25 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../assets/Header.css";
 import { Button } from "@material-ui/core";
-import SideBar from "./SideBar";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import { useStateValue } from "../StateProvider";
 import { auth } from "../firebase";
+import SideBarSecond from "./SidebarSecond";
 import { HashLink } from 'react-router-hash-link';
 
-function Header() {
+function HeaderSecond() {
   const navigate = useNavigate();
 
-  const order = (e) => {
+  const home = (e) => {
     e.preventDefault();
-    navigate("/orders");
+
+    navigate("/");
+  };
+
+  const clean = (e) => {
+    e.preventDefault();
+    navigate("/clean/basket");
   };
 
   const [navOpen, setNavOpen] = useState(false);
@@ -27,11 +33,6 @@ function Header() {
     }
   };
 
-  const home = (e) => {
-    e.preventDefault();
-
-    navigate("/");
-  };
   return (
     <div className="header">
       <div className="header__box box-1">
@@ -44,26 +45,32 @@ function Header() {
         />
       </div>
       <div className="header__box box-2">
-        <HashLink to={user ? "/clean" : ""}>
-          <p>{user ? "Male" : ""}</p>
-          <i></i>{" "}
-        </HashLink>
-        <HashLink to={user ? "/clean/female" : "/login"}>
-          <p>{user ? "Female" : "Login"} </p>
+      <HashLink to="/#">
+          <p>Home </p>
           <i></i>
         </HashLink>
-        <Button className="header__button" onClick={order}>
-        Laundry Basket
+        <HashLink to="/clean#">
+          <p>Male</p>
+          <i></i>{" "}
+        </HashLink>
+        <HashLink to="/clean/women#">
+          <p>Female</p>
+          <i></i>
+        </HashLink>
+
+        
+        <Button className="header__button" onClick={clean}>
+          Laundry Basket
         </Button>
-        {/* <HashLink onClick={handleAuthentication}>
+        {/* <Link onClick={handleAuthentication}>
           <p className="redd">{user ? "Sign Out" : ""}</p>{" "}
-        </HashLink> */}
+        </Link> */}
       </div>
       <div className={navOpen ? "show" : "test"}>
-        <SideBar id="sidebar" />
+        <SideBarSecond id="sidebar" />
       </div>
     </div>
   );
 }
 
-export default Header;
+export default HeaderSecond;

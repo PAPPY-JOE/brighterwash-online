@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.css';
+import './assets/App.css';
 import Header from "./components/Header";
+import HeaderSecond from "./components/HeaderSecond";
 import Footer from "./components/Footer";
 import Index from "./pages/Index"
+import Login from "./pages/Login"
+import SignUp from "./pages/SignUp"
+import Clean from "./pages/Clean"
 import Journal from "./pages/Journal"
-// import Journal from "./Journal"
-// import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { auth, provider } from "./firebase";
 
@@ -36,10 +38,36 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/Journal" element={<><Journal /> <Footer/> </>}/>
+          {/* Journal */}
+          <Route path="/journal" element={<>
+          <Header/>
+          <Journal /> 
+          <Footer/> 
+          </>}/>
+
+          {/* Male */}
+          <Route path="/clean" element={<>
+          <HeaderSecond/>
+          <Clean /> 
+          <Footer/> 
+          </>}/>
+
+          {/* SignUp */}
+          <Route path="/signup" element={<>
+          <SignUp /> 
+          </>}/>
+
+          {/* Login */}
+          <Route path="/login" element={<>
+          <Login /> 
+          </>}/>
 
           {/* Landing page */}
-          <Route path="/" element={<><Header/> <Index/> <Footer/></>}/> 
+          <Route path="/" element={<>
+          <Header/> 
+          <Index/> 
+          <Footer/>
+          </>}/> 
 
         </Routes>
       </div>

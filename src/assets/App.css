@@ -67,7 +67,7 @@ button {
 }
 
 .r {
-  color: var(--brighterwash-color-r);
+  color: red;
   font-weight: bold;
 }
 

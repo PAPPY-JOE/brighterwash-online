@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  background-color: rgb(215, 234, 243);
+}
+
+.clean {
+  max-width: 1454px;
+}
+
+.homeWomen {
+  background-color: rgb(247, 241, 247);
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.home__image {
+  width: 100%;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+@media only screen and (max-width: 880px) {
+  .home {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100vw;
+    padding: 0;
+    width: 100vw;
+  }
+}

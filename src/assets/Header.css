@@ -10,13 +10,15 @@
 }
 
 .test {
-  left: -500px !important;
+  display: none;
+  left: -200vw !important;
   top: -48px;
   position: relative;
   transition: 0.5s ease;
 }
 
 .show {
+  display: block;
   left: 0px !important;
   z-index: 1000000000000000;
 }
@@ -33,6 +35,7 @@
   font-family: "Permanent Marker";
   letter-spacing: 1.5px;
   color: var(--brighterwash-color-deepest);
+  font-size: 2rem;
 }
 
 .menuIcon {
